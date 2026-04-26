@@ -23,10 +23,11 @@ interface ContactForm {
 const EMPTY: ContactForm = { name: '', clinicName: '', email: '', phone: '', message: '' }
 
 const inputCls =
-  'w-full rounded-xl border border-slate-200 dark:border-white/[0.08] bg-white dark:bg-white/[0.04] ' +
+  'w-full rounded-xl bg-slate-100 dark:bg-white/[0.04] ' +
   'px-9 py-2.5 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-white/25 ' +
-  'outline-none focus:border-brand-secondary dark:focus:border-brand-secondary ' +
-  'focus:shadow-[0_4px_12px_-2px_#27aae133] transition-[border-color,box-shadow] duration-150'
+  'border-b-2 border-slate-300 dark:border-white/20 ' +
+  'outline-none focus:border-brand-secondary dark:focus:border-brand-secondary focus:shadow-[0_4px_12px_-2px_rgba(39,170,225,0.2)] ' +
+  'transition-[border-color,box-shadow] duration-150'
 
 export function ContactForm() {
   const [form, setForm] = useState<ContactForm>(EMPTY)
