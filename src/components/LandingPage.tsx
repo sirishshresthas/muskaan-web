@@ -228,7 +228,7 @@ export function LandingPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
           >
-            <MuskaaanDevanagari className="h-24 -mb-3" />
+            <MuskaaanDevanagari className="-mb-3" />
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.08] mb-6">
               Where every smile
               <br />
