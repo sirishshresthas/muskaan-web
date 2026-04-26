@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+/* Dark mode via .dark class on <html> */
+@variant dark (&:is(.dark, .dark *));
+
+/* ── Müskaan brand tokens ─────────────────────────────────────── */
+@theme {
+  --color-brand-primary:   #112754;   /* navy */
+  --color-brand-secondary: #27aae1;   /* müskaan blue */
+  --color-brand-accent:    #f59e0b;   /* amber */
+
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Base ─────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+}
