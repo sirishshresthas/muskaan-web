@@ -59,7 +59,8 @@ export function ContactForm() {
       )
 
       setSubmitted(true)
-    } catch {
+    } catch (err) {
+      console.error('EmailJS error:', err)
       setError('Something went wrong. Please try again or email us directly.')
     } finally {
       setSubmitting(false)
